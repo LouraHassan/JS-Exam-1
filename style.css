@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #EBF4F6;
+}
+@media only screen  and (max-width: 599px){
+    .signup-card{
+        width: 80vw;
+
+    }
+    .login-card{
+        width: 80vw;
+    }
+    .login-input{
+        width: 50vw;
+    }
+    .signup-input{
+        width: 50vw;
+    }
+    .home-grid{
+grid-template-columns: auto;        
+    }
+    .home-card{
+        width: 70vw;
+    }
+
+    .weather-cards{
+        grid-template-columns: auto ;
+    
+    }
+    .time-cards{
+        grid-template-columns: auto ;
+    }
+    .time-cards div{
+      width: 80vw;
+    }
+}
+@media only screen  and (min-width: 600px){
+    .signup-card{
+        width: 60vw;
+
+    }
+    .login-card{
+        width: 60vw;
+    }
+    .login-input{
+        width: 40vw;
+    }
+    .signup-input{
+        width: 40vw;
+    }
+    .home-grid{
+        grid-template-columns: auto auto;        
+            }
+            .home-card{
+                width: 40vw;
+            }
+            .weather-cards{
+                grid-template-columns: auto ;
+            
+            }
+            .time-cards{
+                  grid-template-columns: auto auto;
+              }
+              .time-cards div{
+                width: 40vw;
+              }
+}
+@media only screen  and (min-width: 730px){
+    .signup-card{
+        width: 50vw;
+
+    }
+    .login-card{
+        width: 50vw;
+    }
+    .weather-cards{
+        grid-template-columns: auto auto;
+    
+    }
+    .time-cards{
+        /* width: 90vw; */
+          grid-template-columns: auto auto auto;
+      }
+      .time-cards div{
+        width: 30vw;
+      }
+}
+@media only screen  and (min-width: 1080px){
+    .signup-card{
+        width: 30vw;
+
+    }
+    .login-card{
+        width: 30vw;
+    }
+    .login-input{
+        width: 20vw;
+    }
+    .signup-input{
+        width: 20vw;
+    }
+    .weather-cards{
+        grid-template-columns: auto auto auto auto;
+    
+    }
+    .time-cards{
+        /* width: 90vw; */
+          grid-template-columns: auto auto auto;
+      }
+      .time-cards div{
+        width: 30vw;
+      }
+}
+@media only screen  and (min-width: 1200px){
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signup-card{
+    box-shadow: 2px 2px 6px rgb(212, 212, 212);
+
+    border-radius: 5px;
+ display: grid;
+ justify-items: center;
+ padding: 10px;
+ background-color: white;
+}
+.login-card{
+    box-shadow: 2px 2px 6px rgb(212, 212, 212);
+
+    border-radius: 5px;
+ display: grid;
+ justify-items: center;
+ padding: 10px;
+ background-color: white;
+
+}
+.header h2{
+    color: #496989;
+    font-weight: bold;
+}
+.none{
+    display: none;
+}
+
+.SignUpBtn{
+    background-color: #58A399;
+    color: white;
+}
+.hint-test{
+    font-size: small;
+    color: rgb(167, 167, 167);
+    margin-top: 5px;
+}
+a{
+    color: #8eb584;
+}
+.redText{
+    color: rgb(174, 71, 71);
+}
+.home-container{
+    padding: 10px;
+    
+}
+.home-div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+}
+.home-card{
+    /* width: 40vw; */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgb(212, 212, 212);
+    background-color: rgb(255, 255, 255);
+
+}
+.home-card:hover{
+ background-color: rgb(242, 242, 242);
+ cursor: pointer;
+}
+.home-grid{
+    display: grid;
+color: #58A399;
+}
+.Preyer-card{
+
+}
+.weather-card{
+
+}
+.weather-container{
+padding: 10px;
+}
+.statusDiv{
+    padding: 10px;
+display: grid;
+grid-template-columns: auto auto;
+
+}
+.weather-cards{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+
+}
+#city{
+    color: #58A399;
+    font-weight: bold;
+}
+.weather-card{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 2px 2px 6px rgb(212, 212, 212);
+    background-color: white;
+}
+.weather-card p{
+    color: rgb(25, 62, 103);
+    font-size: large;
+}
+.tempStyle{
+    color: #8eb584;
+}
+.weather-card h4{
+    color: #58A399;
+    font-weight: bold;
+}
+
+.nav-color{
+    background-color: #496989;
+    color: white;
+}
+
+.preyer-container{
+    padding: 10px;
+}
+.date-cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+}
+.date-card{
+
+}
+.date-card p{
+    color: rgb(25, 62, 103);
+    font-size: x-large;
+}
+
+.date-card h4{
+    color: #577B8D;
+    font-weight: bold;
+}
+
+.titleStyle{
+    color: #A8CD9F;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.time-cards{
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    justify-items: center
+}
+.time-cards div{
+    background-color: white;
+padding: 10px;
+box-shadow: 2px 2px 6px rgb(212, 212, 212);
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+.title{
+    color: #344C64;
+    margin: 10px;
+}
+.time-cards div p{
+color: #8eb584;
+font-size: x-large;
+}
+
+.time-cards div h4{
+    color: #58A399;
+    font-size: xx-large;
+    font-weight: bold;
+    align-self: center;
+    }
